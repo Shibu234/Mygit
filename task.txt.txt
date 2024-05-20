@@ -1,0 +1,325 @@
+
+shibu@ShibuBahadur MINGW64 ~
+$ mkdir Task
+
+shibu@ShibuBahadur MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Task/
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+shibu@ShibuBahadur MINGW64 ~
+$ cd task
+\
+shibu@ShibuBahadur MINGW64 ~/task
+$ ls
+
+shibu@ShibuBahadur MINGW64 ~/task
+$ git init
+Initialized empty Git repository in C:/Users/shibu/Task/.git/
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git add first.txt
+fatal: pathspec 'first.txt' did not match any files
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ ^C
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ ^C
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ ^C
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git add first.txt
+fatal: pathspec 'first.txt' did not match any files
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ touch first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git add first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   first.txt
+
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git commit -m "adding first.txt".
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'shibu@ShibuBahadur.(none)')
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git cofig --global user.email "Shibu Khadka"
+git: 'cofig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git config --global user.email "Shibu Khadka"
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git config --global user.email "Shibu Khadka"
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git edit
+git: 'edit' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git config --global user.name "shibubahadur234@gmail.com"
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/shibu/Task/.git/
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ ls
+first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   first.txt
+
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git commit -m "adding first.txt"
+[master (root-commit) 3ea0c78] adding first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git log
+commit 3ea0c784b767b701d02186dcdc11a2fbaac1a025 (HEAD -> master)
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:36:09 2024 +0530
+
+    adding first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ touch second.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ ls
+first.txt  second.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git add second.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git commit -m "adding second.txt
+> "
+[master 208861f] adding second.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 second.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git log
+commit 208861f986241dd634d052880d848ccf702af0af (HEAD -> master)
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:42:33 2024 +0530
+
+    adding second.txt
+
+commit 3ea0c784b767b701d02186dcdc11a2fbaac1a025
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:36:09 2024 +0530
+
+    adding first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git rm first.txt
+rm 'first.txt'
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git log
+commit 208861f986241dd634d052880d848ccf702af0af (HEAD -> master)
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:42:33 2024 +0530
+
+    adding second.txt
+
+commit 3ea0c784b767b701d02186dcdc11a2fbaac1a025
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:36:09 2024 +0530
+
+    adding first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git log
+commit 208861f986241dd634d052880d848ccf702af0af (HEAD -> master)
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:42:33 2024 +0530
+
+    adding second.txt
+
+commit 3ea0c784b767b701d02186dcdc11a2fbaac1a025
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:36:09 2024 +0530
+
+    adding first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git commit -m "Remove first.txt from repository"
+[master 5e0d008] Remove first.txt from repository
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git log
+commit 5e0d00822d911b1469f2eaf2134aa2704b40feca (HEAD -> master)
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:50:56 2024 +0530
+
+    Remove first.txt from repository
+
+commit 208861f986241dd634d052880d848ccf702af0af
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:42:33 2024 +0530
+
+    adding second.txt
+
+commit 3ea0c784b767b701d02186dcdc11a2fbaac1a025
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:36:09 2024 +0530
+
+    adding first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git log
+commit 5e0d00822d911b1469f2eaf2134aa2704b40feca (HEAD -> master)
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:50:56 2024 +0530
+
+    Remove first.txt from repository
+
+commit 208861f986241dd634d052880d848ccf702af0af
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:42:33 2024 +0530
+
+    adding second.txt
+
+commit 3ea0c784b767b701d02186dcdc11a2fbaac1a025
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:36:09 2024 +0530
+
+    adding first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ ls
+second.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git log
+commit 5e0d00822d911b1469f2eaf2134aa2704b40feca (HEAD -> master)
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:50:56 2024 +0530
+
+    Remove first.txt from repository
+
+commit 208861f986241dd634d052880d848ccf702af0af
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:42:33 2024 +0530
+
+    adding second.txt
+
+commit 3ea0c784b767b701d02186dcdc11a2fbaac1a025
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:36:09 2024 +0530
+
+    adding first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$ git log
+commit 5e0d00822d911b1469f2eaf2134aa2704b40feca (HEAD -> master)
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:50:56 2024 +0530
+
+    Remove first.txt from repository
+
+commit 208861f986241dd634d052880d848ccf702af0af
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:42:33 2024 +0530
+
+    adding second.txt
+
+commit 3ea0c784b767b701d02186dcdc11a2fbaac1a025
+Author: shibubahadur234@gmail.com <Shibu Khadka>
+Date:   Mon May 20 23:36:09 2024 +0530
+
+    adding first.txt
+
+shibu@ShibuBahadur MINGW64 ~/task (master)
+$
